@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #82E0AA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todolistnewapp.ViewScreen">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="93.0" prefHeight="293.0" prefWidth="200.0" />
+      <TextArea fx:id="detailArea" layoutX="230.0" layoutY="94.0" prefHeight="202.0" prefWidth="357.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </TextArea>
+      <Label fx:id="dateLabel" alignment="CENTER" layoutX="230.0" layoutY="307.0" prefHeight="35.0" prefWidth="264.0" style="-fx-background-color: #FDFEFE;" text="Due date: ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="56.0" prefHeight="28.0" prefWidth="200.0" text="Short Description" underline="true">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="56.0" prefHeight="28.0" prefWidth="200.0" text="Detail" underline="true">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="106.0" layoutY="20.0" prefHeight="28.0" prefWidth="388.0" text="View your To Do List">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkView" layoutX="483.0" layoutY="351.0" mnemonicParsing="false" onAction="#viewArea" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #F3F781;" text="View List">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

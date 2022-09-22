@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #EBF5FB;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todolistnewapp.RemoveScreen">
+   <children>
+      <ListView fx:id="removeListView" layoutX="20.0" layoutY="103.0" prefHeight="280.0" prefWidth="212.0" />
+      <Button fx:id="removeSelectionButton" layoutX="431.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#removeFromListView" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #EC7063;" text="Remove">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="121.0" layoutY="14.0" prefHeight="31.0" prefWidth="359.0" text="Remove from To Do List">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="76.0" prefHeight="19.0" prefWidth="156.0" text="Short description">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </Label>
+      <Button fx:id="viewListRemoveButton" layoutX="301.0" layoutY="333.0" mnemonicParsing="false" onAction="#viewRemoveScreen" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #81F781;" text="View List">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="137.0" layoutY="45.0" prefHeight="17.0" prefWidth="338.0" textFill="#f20000" />
+      <TextArea fx:id="detailTextArea" layoutX="254.0" layoutY="103.0" prefHeight="146.0" prefWidth="322.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label alignment="CENTER" layoutX="337.0" layoutY="76.0" prefHeight="27.0" prefWidth="156.0" text="Detail">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="date" layoutX="258.0" layoutY="271.0" prefHeight="31.0" prefWidth="218.0" text="Due:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
